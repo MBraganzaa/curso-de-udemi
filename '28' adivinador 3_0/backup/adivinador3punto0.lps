@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="35"/>
+        <CursorPos X="14" Y="54"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="11">
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="35" Column="9" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="40" Column="28" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="37" Column="33" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="35" Column="9" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="37" Column="23" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="35" Column="13" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="40" Column="12" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="35" Column="37" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="49" Column="9" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="50" Column="9" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="46" Column="9" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="adivinador3punto0.lpr"/>
+        <Caret Line="49" Column="9" TopLine="24"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
