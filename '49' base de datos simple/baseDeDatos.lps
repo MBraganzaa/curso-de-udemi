@@ -9,25 +9,13 @@
         <Filename Value="baseDeDatos.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="46"/>
-        <CursorPos X="38" Y="61"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="122"/>
+        <CursorPos X="54" Y="140"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="25">
-      <Position>
-        <Filename Value="baseDeDatos.lpr"/>
-        <Caret Line="31" Column="19" TopLine="2"/>
-      </Position>
-      <Position>
-        <Filename Value="baseDeDatos.lpr"/>
-        <Caret Line="25" Column="17" TopLine="5"/>
-      </Position>
-      <Position>
-        <Filename Value="baseDeDatos.lpr"/>
-        <Caret Line="27" Column="32" TopLine="8"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="baseDeDatos.lpr"/>
         <Caret Line="29" Column="38" TopLine="12"/>
@@ -119,6 +107,34 @@
       <Position>
         <Filename Value="baseDeDatos.lpr"/>
         <Caret Line="35" Column="45" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="52" Column="44" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="171" Column="29" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="53" Column="33" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="67" Column="10" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="84" Column="18" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="85" Column="55" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="baseDeDatos.lpr"/>
+        <Caret Line="46" Column="28" TopLine="26"/>
       </Position>
     </JumpHistory>
     <RunParams>

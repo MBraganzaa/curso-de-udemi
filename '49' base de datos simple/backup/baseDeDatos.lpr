@@ -8,6 +8,7 @@ type
      nombre , apellido: string[15];
      edad , peso: byte;
      genero : TGenero;
+     eliminado : boolean;
      end;
      tBaseDDat = file of TPersona;
 
@@ -39,6 +40,12 @@ begin
        result:=false;
      end else begin
                    seek(b,i);
+                   read(b,nuevoRegistro);
+                   if nuevoRegistro.eliminado then begin
+                      result:=false;
+                      exit;
+                   end;
+                   seek(b,i);
                    nuevoRegistro.nombre:= nombre;
                    nuevoRegistro.apellido:= apellido;
                    nuevoRegistro.edad:= edad;
@@ -47,6 +54,21 @@ begin
                    write(b,nuevoRegistro);
                    result:= true;
     end;
+end;
+// con esta funcion eliminamos un registro.
+function eliminarRegistro(const i: integer; var b: tBaseDDat): boolean;
+var personaLeida: TPersona;
+begin
+     if (i<0) or (i>=filesize(b)) then begin
+     result:= false;
+     exit;
+     end;
+     seek(b,i);
+     read(b,personaLeida);
+     personaLeida.eliminado:=true;
+     seek(b,i);
+     write(b,personaLeida);
+     result:=true;
 end;
 
 {Imprimimos la base de datos completa usando imprimirRegistros}
@@ -58,7 +80,7 @@ begin
        //READ sirve para leer archivos.  los copia en otra var.
        read(b,p);
        //FilePos nos retorna la posicion en la que el registro se encuentra.
-       imprimirRegistros(FilePos(b),p);
+       if not p.eliminado then imprimirRegistros(FilePos(b)-1,p);
      end;
 end;
 begin
@@ -72,6 +94,7 @@ begin
         writeln('1) Ver registros');
         writeln('2) Crear registro');
         writeln('3) Modificar un registro');
+        writeln('4) Eliminar un registro');
         writeln('0) Salir');
         writeln;
         write('>> ');
@@ -95,6 +118,7 @@ begin
                      ReadLn(registroActual.peso);
                      write(Tgenero.MASCULINO,' ',TGenero.FEMENINO,' ',TGenero.OTRO,'. >> ');
                      readln(registroActual.genero);
+                     registroActual.eliminado:=false;
 
                      seek(baseDeDat,FileSize(baseDeDat));
                      write(baseDeDat,registroActual);
@@ -118,6 +142,19 @@ begin
                          writeln('REGISTRO EXITOSO');
                      end else
                          writeln('NO SE PUDO MODIFICAR EL REGISTRO');
+          end;
+          '4' : begin
+                     write('Ingresa el registro a eliminar : ');
+                     readln(indice);
+
+                     if not eliminarRegistro(indice,baseDeDat) then begin
+                         writeln;
+                         writeln('No se pudo eliminar el registro.');
+                     end else begin
+                         writeln;
+                         writeln('Se elimino correactamente.');
+                     end;
+                     readln;
           end;
         end;
   until opcion = OPCION_SALIR;
